@@ -49,6 +49,13 @@
 		26F28FDD2910778300D42DFB /* ShareLogsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F28FDB2910778300D42DFB /* ShareLogsState.swift */; };
 		26F28FDF2910782000D42DFB /* HostCommunicationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F28FDE2910781F00D42DFB /* HostCommunicationManager.swift */; };
 		26F28FE5291078B800D42DFB /* ActivityView in Frameworks */ = {isa = PBXBuildFile; productRef = 26F28FE4291078B800D42DFB /* ActivityView */; };
+		459CDED129C113DC009D02E4 /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 459CDED029C113DC009D02E4 /* RevenueCat */; };
+		459CDED429C1140E009D02E4 /* XCTestDynamicOverlay in Frameworks */ = {isa = PBXBuildFile; productRef = 459CDED329C1140E009D02E4 /* XCTestDynamicOverlay */; };
+		459CDED729C11437009D02E4 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = 459CDED629C11437009D02E4 /* Logging */; };
+		459CDEDA29C1148A009D02E4 /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 459CDED929C1148A009D02E4 /* SwiftProtobuf */; };
+		459CDEDC29C1148A009D02E4 /* SwiftProtobufPluginLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 459CDEDB29C1148A009D02E4 /* SwiftProtobufPluginLibrary */; };
+		459CDEDE29C1148A009D02E4 /* protoc-gen-swift in Frameworks */ = {isa = PBXBuildFile; productRef = 459CDEDD29C1148A009D02E4 /* protoc-gen-swift */; };
+		459CDEE129C114C7009D02E4 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 459CDEE029C114C7009D02E4 /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -208,8 +215,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				459CDEDE29C1148A009D02E4 /* protoc-gen-swift in Frameworks */,
 				26F28FE5291078B800D42DFB /* ActivityView in Frameworks */,
+				459CDEE129C114C7009D02E4 /* ComposableArchitecture in Frameworks */,
 				26C082D0292576160065DEFE /* EPWatchCore in Frameworks */,
+				459CDEDC29C1148A009D02E4 /* SwiftProtobufPluginLibrary in Frameworks */,
+				459CDED429C1140E009D02E4 /* XCTestDynamicOverlay in Frameworks */,
+				459CDED129C113DC009D02E4 /* RevenueCat in Frameworks */,
+				459CDED729C11437009D02E4 /* Logging in Frameworks */,
+				459CDEDA29C1148A009D02E4 /* SwiftProtobuf in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -501,6 +515,13 @@
 			packageProductDependencies = (
 				26F28FE4291078B800D42DFB /* ActivityView */,
 				26C082CF292576160065DEFE /* EPWatchCore */,
+				459CDED029C113DC009D02E4 /* RevenueCat */,
+				459CDED329C1140E009D02E4 /* XCTestDynamicOverlay */,
+				459CDED629C11437009D02E4 /* Logging */,
+				459CDED929C1148A009D02E4 /* SwiftProtobuf */,
+				459CDEDB29C1148A009D02E4 /* SwiftProtobufPluginLibrary */,
+				459CDEDD29C1148A009D02E4 /* protoc-gen-swift */,
+				459CDEE029C114C7009D02E4 /* ComposableArchitecture */,
 			);
 			productName = EPWatch;
 			productReference = 2696881428D477EC002142BF /* EPWatch.app */;
@@ -545,6 +566,11 @@
 				2690401228D6681800A823F5 /* XCRemoteSwiftPackageReference "XMLCoder" */,
 				2602DE43290AD0D400CC83F2 /* XCRemoteSwiftPackageReference "XCGLogger" */,
 				26F28FE3291078B800D42DFB /* XCRemoteSwiftPackageReference "ActivityView" */,
+				459CDECF29C113DC009D02E4 /* XCRemoteSwiftPackageReference "purchases-ios" */,
+				459CDED229C1140E009D02E4 /* XCRemoteSwiftPackageReference "xctest-dynamic-overlay" */,
+				459CDED529C11437009D02E4 /* XCRemoteSwiftPackageReference "swift-log" */,
+				459CDED829C1148A009D02E4 /* XCRemoteSwiftPackageReference "swift-protobuf" */,
+				459CDEDF29C114C7009D02E4 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
 			);
 			productRefGroup = 261FC18C28B7771F007B4A4E /* Products */;
 			projectDirPath = "";
@@ -1305,6 +1331,46 @@
 				minimumVersion = 1.0.0;
 			};
 		};
+		459CDECF29C113DC009D02E4 /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.14.3;
+			};
+		};
+		459CDED229C1140E009D02E4 /* XCRemoteSwiftPackageReference "xctest-dynamic-overlay" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/xctest-dynamic-overlay";
+			requirement = {
+				kind = exactVersion;
+				version = 0.6.0;
+			};
+		};
+		459CDED529C11437009D02E4 /* XCRemoteSwiftPackageReference "swift-log" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-log.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.4.4;
+			};
+		};
+		459CDED829C1148A009D02E4 /* XCRemoteSwiftPackageReference "swift-protobuf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-protobuf.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.20.3;
+			};
+		};
+		459CDEDF29C114C7009D02E4 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.39.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1328,6 +1394,41 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 26F28FE3291078B800D42DFB /* XCRemoteSwiftPackageReference "ActivityView" */;
 			productName = ActivityView;
+		};
+		459CDED029C113DC009D02E4 /* RevenueCat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 459CDECF29C113DC009D02E4 /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = RevenueCat;
+		};
+		459CDED329C1140E009D02E4 /* XCTestDynamicOverlay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 459CDED229C1140E009D02E4 /* XCRemoteSwiftPackageReference "xctest-dynamic-overlay" */;
+			productName = XCTestDynamicOverlay;
+		};
+		459CDED629C11437009D02E4 /* Logging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 459CDED529C11437009D02E4 /* XCRemoteSwiftPackageReference "swift-log" */;
+			productName = Logging;
+		};
+		459CDED929C1148A009D02E4 /* SwiftProtobuf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 459CDED829C1148A009D02E4 /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobuf;
+		};
+		459CDEDB29C1148A009D02E4 /* SwiftProtobufPluginLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 459CDED829C1148A009D02E4 /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobufPluginLibrary;
+		};
+		459CDEDD29C1148A009D02E4 /* protoc-gen-swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 459CDED829C1148A009D02E4 /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = "protoc-gen-swift";
+		};
+		459CDEE029C114C7009D02E4 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 459CDEDF29C114C7009D02E4 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
